@@ -9,7 +9,9 @@ function SideBar(props) {
     useEffect (() =>{
         var tempButtons = [];
         for(var i = 0; i < props.buttons.length; i++){
-          tempButtons.push(<Button fullWidth={true} size="small" sx={[{
+          tempButtons.push(<Button fullWidth={true} size="small"
+          onClick={props.buttons[i].onTap}
+          sx={[{
             backgroundColor: 'white',
             height: "70%",
             borderTop: "1px solid gray",

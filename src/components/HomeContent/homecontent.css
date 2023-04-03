@@ -1,0 +1,25 @@
+.home-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.home-content-header{
+    padding: 2.5%;
+    justify-content: center;
+    align-self: center;
+    font-weight: bold;
+    background-color: rgb(0, 184, 129);
+    color: white;
+}
+
+.home-content-topics {
+    height: 100%;
+}
+.home-content-container{
+    padding: 2%;
+    color: white;
+    width: 25%;
+    justify-content: center;
+    align-self: center;
+    font-weight: bold;
+}
