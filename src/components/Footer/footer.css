@@ -1,0 +1,18 @@
+.site-footer {
+    display: grid;
+    grid-template-areas: "help help help"
+        "phone twitter email";
+    grid-template-columns: 0.33fr 0.33fr 0.33fr;
+    grid-template-rows: 0.5fr 0.5fr;
+}
+
+.help-button{
+    grid-area: help;
+}
+
+.information-container{
+    align-items: center;
+    justify-content: center;;
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,6 @@
+.site-sidebar{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    flex-direction: column;
+}

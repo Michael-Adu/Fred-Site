@@ -1,0 +1,50 @@
+.site-home {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-areas: "header"
+        "main"
+        "footer";
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-columns: 1fr;
+}
+
+
+.header {
+    grid-area: header;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    border-bottom: 1pt solid orange;
+}
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "sidebar main-content";
+    grid-template-columns: 0.2fr 1fr;
+    border: 1pt solid orange;
+    background-color: bisque;
+
+}
+.sideBar {
+    display: flex;
+    grid-area: sidebar;
+    border-right: 1pt solid orange;
+    width: 100%;
+    height: 100%;
+}
+
+.main-content {
+    grid-area: main-content;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: bisque;
+    border-bottom: 1pt solid orange;
+}

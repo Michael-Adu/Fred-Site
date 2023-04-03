@@ -1,0 +1,45 @@
+.site-header{
+    display: grid;
+    grid-template-columns: 0.2fr 0.5fr 1fr;
+    grid-template-areas: "image title nav";
+}
+
+.site-image{
+    padding: 0px 0px 0px 50%;
+    grid-area: image;
+    display: flex;
+    height: 100px;
+}
+.site-title{
+    grid-area: title;
+    width: 500px;
+    color: orange;
+    font-weight: bold;
+    font-style: italic;
+}
+.site-navigation{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: "account search"
+    "logout signout";
+}
+.account-icon{
+    grid-area: account;
+}
+
+#search-text{
+    padding: 10px;
+    grid-area: search;
+    height: 50%;
+}
+
+.logout-icon{
+    grid-area: logout;
+}
+
+.SignOut-button{
+    grid-area: signout;
+    color: red !important;
+}
